@@ -1,1 +1,7 @@
+ith open("rosalind_ini3.txt") as file:
+    lines = file.readlines()
 
+s = lines[0].strip()
+a, b, c, d = map(int, lines[1].split())
+
+print(s[a:b+1], s[c:d+1])
