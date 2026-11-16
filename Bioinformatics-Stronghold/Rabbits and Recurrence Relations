@@ -1,1 +1,13 @@
-
+with open(r"text.txt") as file:
+    for num in file:
+        n,k = map(int, num.split())
+        start = 1
+        curent = 1
+        for i in range(n-2):
+            new = curent +(k * start)
+            start = curent
+            curent = new
+        print(curent if  n >= 2 else start)
+        
+        
+            
