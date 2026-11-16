@@ -1,1 +1,10 @@
+RNA = ""
+with open(r"text.txt") as file:
+    for line in file:
+       for letter in line:
+            if letter == "T":
+                RNA = RNA + "U"
+            else:
+                RNA = RNA + letter
+    print(RNA)            
 
