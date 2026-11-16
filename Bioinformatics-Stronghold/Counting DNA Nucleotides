@@ -1,1 +1,11 @@
 
+DNA_count = {"A":0,"T":0,"C":0,"G":0}
+
+with open(r"text.txt") as file:
+    for line in file:
+        for letter in line:
+            if letter in DNA_count:
+                DNA_count[letter] += 1
+            
+print(DNA_count["A"],DNA_count["C"], DNA_count["G"],
+      DNA_count["T"])
