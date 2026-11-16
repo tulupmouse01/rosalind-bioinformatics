@@ -1,1 +1,15 @@
+C_DNA = ""
 
+with open(r"text.txt") as file:
+    for line in file:
+        for letter in line:
+            if letter == "A":
+                C_DNA = C_DNA + "T"
+            if letter == "T":
+                C_DNA = C_DNA + "A"  
+            if letter == "G":
+                C_DNA = C_DNA + "C"
+            if letter == "C":
+                C_DNA = C_DNA + "G"
+        
+print(C_DNA[::-1])
