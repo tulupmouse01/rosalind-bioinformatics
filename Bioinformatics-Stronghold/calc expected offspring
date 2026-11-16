@@ -1,0 +1,18 @@
+
+with open(r"text.txt") as file:         
+    for line in file:
+        num =   list(map(int,line.split()))
+        a = num[0]
+        b = num[1]
+        c = num[2]
+        d = num[3]
+        e = num[4]
+        f = num[5]
+AA_AA = a * 2
+AA_Aa = b * 2
+AA_aa = c * 2
+Aa_Aa = d * 1.5 
+Aa_aa = e * 1 
+aa_aa = 0     
+expected = AA_AA + AA_Aa + AA_aa + Aa_Aa + Aa_aa + aa_aa
+print(expected)
